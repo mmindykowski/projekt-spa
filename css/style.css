@@ -244,4 +244,22 @@ input[type=checkbox], input[type=radio] {
 body {
   font-family: "Roboto", sans-serif;
   color: #888888;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 23px;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media all and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }/*# sourceMappingURL=style.css.map */
