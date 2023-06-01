@@ -262,4 +262,23 @@ body {
   .container {
     max-width: 1140px;
   }
+}
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fff;
+}
+.main-nav .main-nav-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-nav .brand {
+  height: 50px;
+  display: inline-block;
+}
+.main-nav .brand img {
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
