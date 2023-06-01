@@ -269,6 +269,7 @@ body {
   width: 100%;
   z-index: 9999;
   background-color: #fff;
+  padding: 12px 0;
 }
 .main-nav .main-nav-holder {
   display: flex;
@@ -281,4 +282,43 @@ body {
 }
 .main-nav .brand img {
   height: 100%;
+}
+.main-nav .mobile-close, .main-nav .mobile-hamburger {
+  font-size: 28px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.main-nav .mobile-hamburger {
+  color: #1ba4ce;
+}
+.main-nav .mobile-close {
+  color: #fff;
+  text-align: right;
+  height: 50px;
+}
+.main-nav .open-menu-holder {
+  position: fixed;
+  background-color: #1ba4ce;
+  top: 0;
+  right: 0;
+  max-width: 480px;
+  width: 480px;
+  text-align: right;
+  padding: 12px 23px;
+  display: none;
+}
+.main-nav .open-menu-holder.open {
+  display: block;
+}
+.main-nav .open-menu-holder .menu {
+  list-style: none;
+}
+.main-nav .open-menu-holder .menu .menu-item {
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.main-nav .open-menu-holder .menu .menu-item a {
+  color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
