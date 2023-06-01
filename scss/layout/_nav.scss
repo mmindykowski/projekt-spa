@@ -50,23 +50,62 @@
     display: none;
 
     &.open {
-        display: block;
+      display: block;
     }
 
     .menu {
-        list-style: none;
+      list-style: none;
+
+      .menu-item {
+        font-size: 50px;
+        text-transform: uppercase;
+        padding: 20px 0;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: $large) {
+    .main-nav-holder {
+      justify-content: flex-start;
+    }
+
+    .brand {
+      height: 80px;
+    }
+
+    %mobile-controls {
+      display: none;
+    }
+
+    .open-menu-holder {
+      display: block;
+      position: static;
+      background-color: transparent;
+      width: auto;
+      max-width: 100%;
+      padding: 0;
+      align-self: flex-start;
+
+      .menu {
+        background-color: #fff;
 
         .menu-item {
-            font-size: 50px;
-            text-transform: uppercase;
-            padding: 20px 0;
+          display: inline-block;
+          margin: 0 20px;
+          font-size: initial;
 
-            a {
-                color: #fff;
-                text-decoration: none;
-
-            }
+          a {
+            color: $secondary-color;
+            text-decoration: none;
+            font-weight: 700;
+          }
         }
+      }
     }
   }
 }

@@ -321,4 +321,37 @@ body {
 .main-nav .open-menu-holder .menu .menu-item a {
   color: #fff;
   text-decoration: none;
+}
+@media all and (min-width: 992px) {
+  .main-nav .main-nav-holder {
+    justify-content: flex-start;
+  }
+  .main-nav .brand {
+    height: 80px;
+  }
+  .main-nav .mobile-hamburger, .main-nav .mobile-close {
+    display: none;
+  }
+  .main-nav .open-menu-holder {
+    display: block;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+    align-self: flex-start;
+  }
+  .main-nav .open-menu-holder .menu {
+    background-color: #fff;
+  }
+  .main-nav .open-menu-holder .menu .menu-item {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: initial;
+  }
+  .main-nav .open-menu-holder .menu .menu-item a {
+    color: #473452;
+    text-decoration: none;
+    font-weight: 700;
+  }
 }/*# sourceMappingURL=style.css.map */
