@@ -246,6 +246,11 @@ body {
   color: #888888;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bellota", cursive;
+  color: #473452;
+}
+
 .container {
   max-width: 100%;
   width: 100%;
@@ -353,5 +358,49 @@ body {
     color: #473452;
     text-decoration: none;
     font-weight: 700;
+  }
+}
+
+.main-header {
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.main-header .header-description {
+  color: #473452;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Bellota", cursive;
+  font-weight: 700;
+}
+.main-header h1 {
+  color: #1e2528;
+  font-size: 50px;
+}
+.main-header .header-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 30%;
+  z-index: 100000;
+  display: none;
+}
+.main-header .header-flowers {
+  max-width: 8%;
+  position: absolute;
+  left: 0;
+  top: 35%;
+}
+@media all and (min-width: 1200px) {
+  .main-header .header-bg {
+    width: 40%;
+  }
+}
+@media all and (min-width: 992px) {
+  .main-header .header-bg {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

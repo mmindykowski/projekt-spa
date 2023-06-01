@@ -7,6 +7,11 @@ body {
   color: $primary-text-color;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $secondary-font;
+  color: $secondary-color;
+}
+
 .container {
   max-width: $small-container;
   width: $small-container;
