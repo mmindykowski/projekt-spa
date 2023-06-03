@@ -45,6 +45,7 @@
       i {
         height: 40px;
         width: 40px;
+        margin-right: 5px;
         text-align: center;
         line-height: 40px;
         border: 1px solid $secondary-color;
@@ -73,12 +74,26 @@
 
   @media all and (min-width: $extra-large) {
     .header-bg {
-      width: 40%;
+      max-width: 40%;
     }
   }
+
   @media all and (min-width: $large) {
+    .main-header-holder {
+      width: 60%;
+    }
+
     .header-bg {
       display: block;
+    }
+  }
+}
+
+@media all and (min-width: $extra-small) {
+  .buttons-panel {
+    .reserve,
+    .watch {
+      margin: 0;
     }
   }
 }

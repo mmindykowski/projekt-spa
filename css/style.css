@@ -409,6 +409,7 @@ a {
 .main-header .buttons-panel .watch i {
   height: 40px;
   width: 40px;
+  margin-right: 5px;
   text-align: center;
   line-height: 40px;
   border: 1px solid #473452;
@@ -432,11 +433,21 @@ a {
 }
 @media all and (min-width: 1200px) {
   .main-header .header-bg {
-    width: 40%;
+    max-width: 40%;
   }
 }
 @media all and (min-width: 992px) {
+  .main-header .main-header-holder {
+    width: 60%;
+  }
   .main-header .header-bg {
     display: block;
+  }
+}
+
+@media all and (min-width: 480px) {
+  .buttons-panel .reserve,
+  .buttons-panel .watch {
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
