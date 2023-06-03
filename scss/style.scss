@@ -1,16 +1,13 @@
-@import 'utils/variables';
-@import 'utils/mixins';
+@import "utils/variables";
+@import "utils/mixins";
 
-@import 'base/normalize';
+@import "base/normalize";
 
-@import 'base/global';
+@import "base/global";
 
-@import 'layout/nav';
+@import "layout/nav";
 
-@import 'layout/header';
-@import 'layout/about';
+@import "layout/header";
+@import "layout/about";
 
-@import 'components/buttons';
-
-
-
+@import "components/buttons";
