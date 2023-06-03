@@ -488,4 +488,21 @@ section {
   font-weight: 300;
   margin: 0 auto;
   margin: 26px;
+}
+
+.btn-primary {
+  border-radius: 30px;
+  display: inline-block;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #1ba4ce;
+}
+.btn-primary:hover {
+  background-color: #30383b;
 }/*# sourceMappingURL=style.css.map */
