@@ -25,6 +25,10 @@ a {
   transition: all 0.3s;
 }
 
+section {
+  padding: 30px 0;
+}
+
 .container {
   max-width: $small-container;
   width: $small-container;
@@ -35,6 +39,10 @@ a {
 @media all and (min-width: $large) {
   .container {
     max-width: $small-container;
+  }
+
+  section {
+    padding: 60px 0;
   }
 }
 
