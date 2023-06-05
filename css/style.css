@@ -549,7 +549,7 @@ section {
   }
 }
 
-.btn-primary {
+.btn-secondary, .btn-primary {
   border-radius: 30px;
   display: inline-block;
   padding: 15px 35px;
@@ -564,4 +564,11 @@ section {
 }
 .btn-primary:hover {
   background-color: #30383b;
+}
+
+.btn-secondary {
+  background-color: #30383b;
+}
+.btn-secondary:hover {
+  background-color: #1ba4ce;
 }/*# sourceMappingURL=style.css.map */
