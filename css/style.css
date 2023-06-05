@@ -570,7 +570,7 @@ section .section-header p {
 }
 
 .team {
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 
 .appointment {
@@ -583,15 +583,19 @@ section .section-header p {
   background-repeat: no-repeat;
   background-position: center;
   width: 40%;
+  display: none;
 }
-.appointment form {
+.appointment #appointment-form {
   width: 100%;
   background-color: #1ba4ce;
   padding: 80px 40px;
 }
 @media all and (min-width: 992px) {
-  .appointment form {
-    width: 40%;
+  .appointment .desktop-background {
+    display: block;
+  }
+  .appointment #appointment-form {
+    width: 60%;
     padding: 80px;
   }
 }

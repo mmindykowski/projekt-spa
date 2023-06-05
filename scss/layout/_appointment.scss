@@ -7,17 +7,22 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 40%;
+    display: none;
   }
 
-  form {
+  #appointment-form {
     width: 100%;
     background-color: $primary-color;
     padding: 80px 40px;
   }
 
   @media all and (min-width: $large) {
-    form {
-      width: 40%;
+    .desktop-background {
+      display: block;
+    }
+
+    #appointment-form {
+      width: 60%;
       padding: 80px;
     }
   }
