@@ -260,6 +260,10 @@ h2 {
   font-size: 42px;
 }
 
+h3 {
+  font-size: 22px;
+}
+
 a {
   transition: all 0.3s;
 }
@@ -270,6 +274,19 @@ p {
 
 section {
   padding: 30px 0;
+}
+section .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+section .section-header p {
+  margin: auto;
+  font-weight: 300;
+}
+@media all and (min-width: 768px) {
+  section .section-header p {
+    max-width: 70%;
+  }
 }
 
 .container {
@@ -305,6 +322,9 @@ section {
   .col-md-50p {
     width: 50%;
   }
+  .col-md-33p {
+    width: 33.33%;
+  }
 }
 @media all and (min-width: 992px) {
   .col-lg-25p {
@@ -325,7 +345,7 @@ section {
   justify-content: space-between;
 }
 .main-nav .brand {
-  height: 50px;
+  height: 75px;
   display: inline-block;
 }
 .main-nav .brand img {
@@ -506,7 +526,7 @@ section {
   max-width: 850px;
   font-weight: 300;
   margin: 0 auto;
-  margin: 26px;
+  margin-bottom: 26px;
 }
 
 .services .service {
@@ -571,4 +591,26 @@ section {
 }
 .btn-secondary:hover {
   background-color: #1ba4ce;
+}
+
+.infobox {
+  padding: 0 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.infobox .infobox-inner {
+  border: 1px solid #e2e5ea;
+  padding: 25px;
+  border-radius: 2px;
+}
+.infobox .infobox-inner:hover {
+  box-shadow: 0 5px 20px #f0f0f0;
+}
+.infobox .infobox-inner img {
+  width: 100%;
+}
+.infobox .infobox-inner p {
+  font-weight: 300;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */
