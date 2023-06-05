@@ -569,6 +569,33 @@ section .section-header p {
   }
 }
 
+.team {
+  padding-bottom: 150px;
+}
+
+.appointment {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.appointment .desktop-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40%;
+}
+.appointment form {
+  width: 100%;
+  background-color: #1ba4ce;
+  padding: 80px 40px;
+}
+@media all and (min-width: 992px) {
+  .appointment form {
+    width: 40%;
+    padding: 80px;
+  }
+}
+
 .btn-secondary, .btn-primary {
   border-radius: 30px;
   display: inline-block;
