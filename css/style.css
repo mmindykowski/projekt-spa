@@ -636,8 +636,13 @@ section .section-header p {
   box-shadow: 0 5px 20px #f0f0f0;
   padding-bottom: 30px;
 }
+.infobox-team .infobox-team-caption:hover .team-social-icons {
+  height: 35px;
+}
 .infobox-team .infobox-team-caption .team-social-icons {
   transition: all 0.3s;
+  height: 0;
+  overflow: hidden;
 }
 .infobox-team .infobox-team-caption .team-social-icons a {
   height: 35px;
@@ -651,4 +656,10 @@ section .section-header p {
   border-radius: 50%;
   margin: 0 10px;
   text-decoration: none;
+}
+.infobox-team .infobox-team-caption .team-social-icons a:hover {
+  border: 1px solid #1ba4ce;
+  color: #fff;
+  background-color: #1ba4ce;
+  box-shadow: #1ba4ce;
 }/*# sourceMappingURL=style.css.map */
