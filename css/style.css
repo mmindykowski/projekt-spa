@@ -659,6 +659,21 @@ section .section-header p {
 .infobox .infobox-inner:hover {
   box-shadow: 0 5px 20px #f0f0f0;
 }
+.infobox .infobox-inner .meta {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.infobox .infobox-inner .meta .category {
+  margin-right: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+.infobox .infobox-inner .meta .post-date {
+  margin-left: 5px;
+  text-decoration: none;
+  color: inherit;
+}
 .infobox .infobox-inner img {
   width: 100%;
 }
