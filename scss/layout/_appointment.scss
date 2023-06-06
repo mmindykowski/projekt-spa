@@ -10,7 +10,7 @@
     display: none;
   }
 
-  #appointment-form {
+  form {
     width: 100%;
     background-color: $primary-color;
     padding: 80px 40px;
@@ -21,9 +21,20 @@
       display: block;
     }
 
-    #appointment-form {
+    form {
       width: 60%;
       padding: 80px;
+      @include flexbox;
+      justify-content: space-between;
+
+      input,
+      select {
+        width: 49%;
+      }
+
+      textarea {
+        margin: 60 px 0;
+      }
     }
   }
 }

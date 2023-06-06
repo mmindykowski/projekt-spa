@@ -264,6 +264,7 @@ h3 {
   font-size: 22px;
 }
 
+button,
 a {
   transition: all 0.3s;
 }
@@ -585,7 +586,7 @@ section .section-header p {
   width: 40%;
   display: none;
 }
-.appointment #appointment-form {
+.appointment form {
   width: 100%;
   background-color: #1ba4ce;
   padding: 80px 40px;
@@ -594,13 +595,23 @@ section .section-header p {
   .appointment .desktop-background {
     display: block;
   }
-  .appointment #appointment-form {
+  .appointment form {
     width: 60%;
     padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .appointment form input,
+  .appointment form select {
+    width: 49%;
+  }
+  .appointment form textarea {
+    margin: 60 px 0;
   }
 }
 
-.btn-secondary, .btn-primary {
+.btn-form, .btn-secondary, .btn-primary {
   border-radius: 30px;
   display: inline-block;
   padding: 15px 35px;
@@ -622,6 +633,16 @@ section .section-header p {
 }
 .btn-secondary:hover {
   background-color: #1ba4ce;
+}
+
+.btn-form {
+  background-color: #fff;
+  color: #473452;
+  font-weight: 700;
+}
+.btn-form:hover {
+  background-color: #30383b;
+  color: #fff;
 }
 
 .infobox-team, .infobox {
@@ -727,4 +748,13 @@ input:-moz-placeholder,
 textarea:-moz-placeholder,
 select:-moz-placeholder {
   color: #fff;
+}
+input.error,
+textarea.error,
+select.error {
+  border-bottom: 1px solid #f00;
+}
+
+textarea {
+  height: 100px;
 }/*# sourceMappingURL=style.css.map */

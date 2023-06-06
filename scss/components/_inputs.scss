@@ -25,4 +25,13 @@ select {
         color: #fff;
     }
 
+    &.error {
+        border-bottom: 1px solid #f00;
+    }
+
+}
+
+textarea {
+   height: 100px;
+
 }
