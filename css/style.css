@@ -614,6 +614,51 @@ section .section-header p {
   }
 }
 
+.contact {
+  color: #fff;
+  background-color: #1ba4ce;
+}
+.contact .section-header {
+  color: #fff;
+}
+.contact .section-header h2 {
+  color: #fff;
+}
+.contact .contact-data {
+  padding: 25px 0;
+  margin-bottom: 30px;
+}
+.contact .contact-data .contact-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+}
+.contact .contact-data .contact-item .img-holder {
+  width: 15%;
+  margin-right: 10px;
+  text-align: center;
+}
+.contact .contact-data .contact-item .img-holder img {
+  width: 30px;
+}
+.contact .contact-data .contact-item a {
+  color: #fff;
+  text-decoration: none;
+}
+.contact .contact-data .contact-item a:hover {
+  text-decoration: underline;
+}
+@media all and (min-width: 768px) {
+  .contact .contact-data .contact-item {
+    justify-content: flex-start;
+  }
+}
+.contact .contact-form {
+  padding: 25px 0;
+}
+
 .btn-form, .btn-secondary, .btn-primary {
   border-radius: 30px;
   display: inline-block;
