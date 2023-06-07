@@ -596,6 +596,15 @@ section .section-header p {
   background-color: #1ba4ce;
   padding: 80px 40px;
 }
+.appointment form .appointment-message {
+  width: 100%;
+  display: none;
+}
+.appointment form .appointment-message.error {
+  color: red;
+  font-weight: 700;
+  display: block;
+}
 @media all and (min-width: 992px) {
   .appointment .desktop-background {
     display: block;
