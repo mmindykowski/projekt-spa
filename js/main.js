@@ -33,5 +33,10 @@ document
       }
     }
 
-    console.log("wyslanie fotm");
+    if (allFields) {
+      console.log("wyslanie fotm");
+    } else {
+        appointmentMessage.classList.add('error');
+        appointmentMessage.innerText = `Wypełnij wymagane pola!`
+    }
   });
