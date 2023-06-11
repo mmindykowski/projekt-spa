@@ -14,6 +14,23 @@ document
       .classList.toggle("open");
   });
 
+
+  const createAppointment = (appointment) => {
+    console.log(appointment);
+
+    fetch('https://akademia108.pl/api/ajax/post-appointment.php', {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      mode: 'cors',
+      method: 'POST',
+      body: JSON.stringify(appointment)
+    }).then(res => res.json())
+    .then(resJSON=> {
+      console.log(resJSON);
+    })
+  }
+
 document
   .getElementById("appointment-form")
   .addEventListener("submit", function (e) {
