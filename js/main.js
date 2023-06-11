@@ -14,22 +14,26 @@ document
       .classList.toggle("open");
   });
 
+const createAppointment = (appointment) => {
+  console.log(appointment);
 
-  const createAppointment = (appointment) => {
-    console.log(appointment);
+const appointmentMessage = document.querySelector('.appointment-message');
 
-    fetch('https://akademia108.pl/api/ajax/post-appointment.php', {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      mode: 'cors',
-      method: 'POST',
-      body: JSON.stringify(appointment)
-    }).then(res => res.json())
-    .then(resJSON=> {
+  fetch('https://akademia108.pl/api/ajax/post-appointment.php', {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    mode: 'cors',
+    method: 'POST',
+    body: JSON.stringify(appointment)
+  })
+    .then(res => res.json())
+    .then((resJSON) => {
       console.log(resJSON);
-    })
-  }
+      appointmentMessage.classList.add('send');
+      appointmentMessage.innerText = `Dziękujemy ${resJSON.appointment.name}. Zostałeś zapisany!`
+    });
+};
 
 document
   .getElementById("appointment-form")
