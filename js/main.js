@@ -64,7 +64,7 @@ document
     }
 
     if (allFields) {
-      console.log(appointment);
+      createAppointment(appointment);
     } else {
       appointmentMessage.classList.add("error");
       appointmentMessage.innerText = `Wypełnij wymagane pola!`;

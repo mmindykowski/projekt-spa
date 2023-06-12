@@ -605,6 +605,10 @@ section .section-header p {
   font-weight: 700;
   display: block;
 }
+.appointment form .appointment-message.send {
+  color: #ffffff;
+  display: block;
+}
 @media all and (min-width: 992px) {
   .appointment .desktop-background {
     display: block;
